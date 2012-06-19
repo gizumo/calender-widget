@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"/>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"/>
+<head>
+<meta http-equiv="Content-Script-Type" content="text/javascript" charset="utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="main.css" type="text/css"/>
+<title>無題ドキュメント</title>
+</head>
+<body>
+
+<!--script type="text/javascript" src="http://www.google.com/jsapi?key=AIzaSyCQWSxxvzbA3dp3lVz0WEUUHQnaRUHapN0"></script>-->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>  
+<script type="text/javascript">
+<!--
+google.load("prototype", "1.6");
+var service = null;
+var url = "http://www.google.com/calendar/feeds/ja.japanese#holiday@group.v.calendar.google.com
+
+ google.setOnLoadCallback(getMyFeed);
+ 
+        function getMyFeed(){
+            service = new google.gdata.calendar.CalendarService("calendar-sample");
+            query = new google.gdata.calendar.CalendarEventQuery(url);
+            query.setOrderBy(google.gdata.calendar.CalendarEventQuery.ORDERBY_START_TIME);
+            query.setSortOrder(google.gdata.calendar.CalendarEventQuery.SORTORDER_ASCENDING);
+            query.setSingleEvents(true);
+            query.setMaxResults(10);
+            var start = new google.gdata.DateTime.fromIso8601("2010-01-01");
+            var end = new google.gdata.DateTime.fromIso8601("2010-12-31");
+            query.setMinimumStartTime(start);
+            query.setMaximumStartTime(end);
+            service.getEventsFeed(query, callback, handleError);
+        }
+ 
+         function callback(result) {
+            var entries = result.feed.entry;
+            var res = "";
+            for (var i = 0; i < entries.length; i++) {
+                var entry = entries[i];
+                var title = entry.getTitle().getText();
+                var times = entry.getTimes();
+                res += (i + 1) + ": " + title + " (" + times[0].startTime + ")<br />";
+            }
+            document.getElementById("tab").innerHTML = res;
+        }
+ 
+        function handleError(error) {
+            document.getElementById("tab").innerHTML = error;
+        }
+        //-->
+        </script>
+
+
+</script>  
+
+<div id="space">
+<div id="calender"></div>
+<div id="tab">
+<iframe src="https:www.google.com/calendar/embed?height=768&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ja.japanese%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo" style=" border:solid 1px #777 " width="512" height="768" frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+</body>
+</html>
