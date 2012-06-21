@@ -1,0 +1,36 @@
+<!DOCTYPE HTML  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Calender</title>
+<link href="main2.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<script src="jquery.js"></script>
+<div id="calender">
+<div id="days">
+<script type="text/javascript">
+var weekchars = new Array( "日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日" );
+var nowdate = new Date();
+var year = nowdate.getFullYear(); // 年
+var mon  = nowdate.getMonth() + 1; // 月
+var date = nowdate.getDate(); // 日
+var week = nowdate.getDay()-1; // 曜日
+var hour = nowdate.getHours(); // 時
+var min  = nowdate.getMinutes(); // 分
+var sec  = nowdate.getSeconds(); // 秒
+var msec = nowdate.getMilliseconds(); // ミリ秒
+
+document.write(year+"年"+mon+"月"+date+"日"+weekchars[ week ]);
+</script>
+</div>
+<div id="wday">
+  <iframe src="https://www.google.com/calendar/embed?src=ja.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia/Tokyo" 
+style="border: 0" width="600" height="340" frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+
+</body>
+</html>

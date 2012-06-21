@@ -1,5 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
+
+#body{
+width:600px;
+height:400px;
+}
+
 #calender{
 width:600px;
 height:400px;
@@ -20,6 +26,5 @@ text-align:center;
 #wday{
 width:600px;
 height:350px;
-
 }
 
