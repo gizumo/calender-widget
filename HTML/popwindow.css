@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+*/
+.pWindow , .pWindow table{
+	font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+	.pWindow table td {
+		margin: 0;
+		padding: 0;
+	}
+
+	.pWindow .pwContainer {
+		border-collapse: collapse;
+	}
+
+	.pWindow .titleBar {
+		font-weight: bold;
+		line-height: 31px;
+	}
+		.pWindow .titleBar .pwBarL {
+			background: url(images/pw_tbar_l.png) left top no-repeat;
+			width: 8px;
+			height: 31px;
+		}
+			* html .pWindow .titleBar .pwBarL {
+				background: url(images/forie/pw_tbar_l.png) left top no-repeat;
+			}
+
+		.pWindow .titleBar .pwBarCenter {
+			background: url(images/pw_tbar_c.png) left top repeat-x;
+			cursor: move;
+			height: 31px;
+		}
+			* html .pWindow .titleBar .pwBarCenter {
+				background: url(images/forie/pw_tbar_c.png) left top repeat-x;
+			}
+
+		.pWindow .titleBar .pwBarR {
+			background: url(images/pw_tbar_r.png) left top no-repeat;
+			width: 18px;
+			height: 31px;
+		}
+			* html .pWindow .titleBar .pwBarR {
+				background: url(images/forie/pw_tbar_r.png) left top no-repeat;
+			}
+
+.pWindow .contentsBox {
+	position: relative;
+}
+	.pWindow .contentsBox .contentsL {
+		background: url(images/pw_body_l.png) left top repeat-y;
+		width: 8px;
+		height: 100%;
+	}
+		* html .pWindow .contentsBox .contentsL {
+			background: url(images/forie/pw_body_l.png) left top repeat-y;
+		}
+	
+	.pWindow .contentsBox .contentsBody {
+		background-color: #fff;
+		padding: 10px 5px 5px;
+		overflow: auto;
+		vertical-align: top;
+	}
+		.pWindow .contentsBox .contentsBody div.information {
+			background: url(images/ico_information.png) left top no-repeat;
+			padding-left: 50px;
+			min-height: 44px;
+			height: auto !important;
+			height: 44px;		/* for IE */
+		}
+		
+		.pWindow .contentsBox .contentsBody div.warning {
+			background: url(images/ico_warning.png) left top no-repeat;
+			padding-left: 50px;
+			min-height: 44px;
+			height: auto !important;
+			height: 44px;		/* for IE */
+		}
+		
+		.pWindow .contentsBox .contentsBody div.caution {
+			background: url(images/ico_caution.png) left top no-repeat;
+			padding-left: 50px;
+			min-height: 44px;
+			height: auto !important;
+			height: 44px;		/* for IE */
+		}
+	
+		.pWindow .contentsBox .contentsBody.contentsMain {	/* for Opera and IE hack */
+			height: 100%;
+		}
+		
+		.pWindow .contentsBox .contentsBody iframe {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.pWindow .contentsBox.btnArea td {
+			overflow: hidden;
+			padding: 0 !important;
+			vertical-align: bottom;
+			height: 35px;
+		}
+	
+	.pWindow .contentsBox .contentsR {
+		background: url(images/pw_body_r.png) left top repeat-y;
+		width: 18px;
+		height: 100%;
+	}
+		* html .pWindow .contentsBox .contentsR {
+			background: url(images/forie/pw_body_r.png) left top repeat-y;
+		}
+	
+.pWindow .contentsFooter {
+	position: relative;
+}
+	.pWindow .contentsFooter .cfL {
+		background: url(images/pw_foot_l.png) left top no-repeat;
+		width: 8px;
+		height: 18px;
+	}
+		* html .pWindow .contentsFooter .cfL {
+			background: url(images/forie/pw_foot_l.png) left top no-repeat;
+		}
+	
+	.pWindow .contentsFooter .cfC {
+		background: url(images/pw_foot_c.png) left top repeat-x;
+		margin: 0 9px 0 8px;
+		height: 18px;
+	}
+		* html .pWindow .contentsFooter .cfC {
+			background: url(images/forie/pw_foot_c.png) left top repeat-x;
+		}
+	
+	.pWindow .contentsFooter .cfR {
+		background: url(images/pw_foot_r.png) left top repeat-y;
+		width: 18px;
+		height: 18px;
+	}
+		* html .pWindow .contentsFooter .cfR {
+			background: url(images/forie/pw_foot_r.png) left top repeat-y;
+		}
+		
+		.pWindow .contentsFooter .cfR.resizable {
+			background: url(images/pw_foot_r_resize.png) left top no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+			* html .pWindow .contentsFooter .cfR.resizable {
+				background: url(images/forie/pw_foot_r_resize.png) left top no-repeat;
+			}
+	
+.pwBtn {
+	text-align: center;
+	height: 25px;
+}
+
+/*
+------------------------------------------------------
+	ボタン関連のスタイル
+------------------------------------------------------
+*/
+.closeBtn {
+	background: url(images/btn_close.png) left top no-repeat;
+	outline: 0;
+	position: absolute;
+	right: 12px;
+	top: 5px;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+}
+
+.minimumBtn {
+	background: url(images/btn_minimum.png) left top no-repeat;
+	outline: 0;
+	position: absolute;
+	right: 57px;
+	top: 5px;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+}
+
+.maximumBtn {
+	background: url(images/btn_maximum.png) left top no-repeat;
+	outline: 0;
+	position: absolute;
+	right: 35px;
+	top: 5px;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+}
+
+.pwYes {
+	background: url(images/btn_pw_yes.png) left top no-repeat;
+	display: -moz-inline-box;
+	display: inline-block;
+	/display: inline;
+	outline: 0;
+	line-height: 25px;
+	width: 75px;
+	height: 25px;
+	/zoom: 1;
+}
+	.pwYes.confirm {
+		margin-right: 3px;
+	}
+	
+	.pwYes:hover {
+		background-position: left bottom;
+	}
+
+.pwNo {
+	background: url(images/btn_pw_no.png) left top no-repeat;
+	display: -moz-inline-box;
+	display: inline-block;
+	/display: inline;
+	outline: 0;
+	width: 75px;
+	height: 25px;
+	/zoom: 1;
+}
+	.pwNo:hover {
+		background-position: left bottom;
+	}
+
+/*
+------------------------------------------------------
+	モーダル表示時の背景の色と透過のスタイル
+------------------------------------------------------
+*/
+#pwCover {
+	background-color: black;
+}

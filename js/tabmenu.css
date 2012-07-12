@@ -1,0 +1,49 @@
+/* CSS for tabmenu with jquery v1.3 */
+/* Copyright(C) ASH (http://ash.jp/) */
+
+ul.tabmenu {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	border: none;
+	height: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+ul.tabmenu li {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 25px;
+	white-space: nowrap;
+	float: left;
+	color: #000000;
+	background: transparent url(img/tab_inact.gif) no-repeat 0px 0px;
+	margin: 0px 10px 0px 0px;
+	padding: 0px 0px 0px 10px;
+}
+ul.tabmenu li.act {
+	color: #000000;
+	background: transparent url(img/tab_act.gif) no-repeat 0px 0px;
+}
+ul.tabmenu li a {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	background: transparent url(img/tab_inact.gif) no-repeat 100% 0px;
+	margin: 0px -10px 0px 0px;
+	padding: 0px 10px 0px 0px;
+}
+ul.tabmenu li.act a {
+	color: #000000;
+	background: transparent url(img/tab_act.gif) no-repeat 100% 0px;
+}
+ul.tabmenu li a:visited {
+	color: #000000;
+}
+div.tabbody {
+	border: #777777 1px solid;
+	width: 100%;
+	margin-top: -1px;
+}

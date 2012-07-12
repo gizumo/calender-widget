@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	EditRunDemo
+</title>
+<script src="codepress/codepress.js" type="text/javascript"></script>
+<script type="text/javascript">
+function setSession() {
+  var htmlSource = codepress.getCode();
+  PageMethods.SetSession(htmlSource, onComplete, onError);  // Save HTML Source to session state  
+}
+function onComplete(result) {
+  __doPostBack("lnkRun", "");  // Raise Async Postback
+}
+function onError(error) {
+  if(error != null) {
+    alert(error.get_message());
+  }
+}  
+</script>
+</head>
+<body>
+  <form name="form1" method="post" action="EditRunDemo.aspx" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMjkwNDA3MjFkZLNenwVLFmB6n/qs6n6GdkcsN1d+" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=UmZNk3ooLJDyLFxEXccsbn2IL56YWWTSC0r-AW24DLYBsl7o7bjno_uAx30XG2hNI2bMdXwrh1mE6wXLy7NtVgPtNTQ1&amp;t=634605222834856163" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=-gmUMFhLv-QF9I8m9TZTaKp7IN7hfSx3qZ6CjdoJNYzoo4pOAE3KiKn3CwgjcIIDAKvVoa4r3S1pehy296BZd_oCKFzxdDJ-R3OAez1YRfTG4pgX74glvk7cR-wAWdL6cNrTbPpf2BpEwULv-He2IeM07aY1&amp;t=ffffffffe2c65abf" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=JKa4DGxxcqZTvHatvlDW-AVIaQFEbMdShWlTdxzuLtl4lCvBE-bKDdLWPbcc9GW6lrsj9F9UnlTGFvlEQTVrDPpkZEMm5E0FEUDVHCUSzUchxFTr2PuNprsvdS1EmY56O8Qoex2V9SJj2c0msLbUPeMVv__kOr2ibK6Uiri3Pv-agJRu0&amp;t=ffffffffe2c65abf" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+SetSession:function(htmlSource,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SetSession',false,{htmlSource:htmlSource},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_path("/EditRunDemo.aspx");
+PageMethods.SetSession= function(htmlSource,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SetSession(htmlSource,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+  <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', document.getElementById('form1'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tUpdatePanel1'], ['lnkRun'], [], 90);
+//]]>
+</script>
+
+  
+  <table width="100%" border="0" cellpadding="3" cellspacing="0">
+    
+    <tr>
+      <td>           
+      <textarea id="codepress" 
+        class="codepress javascript linenumbers-off"  
+        style="width:99%;height:200px" 
+        wrap="off" rows="21" cols="100">      
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>jQuery - UI Tabs3</title>
+  <link href="jQuery/uitabs3/ui.tabs.css" rel="stylesheet" type="text/css" media="print, projection, screen" />
+  <script src="jQuery/jquery-1.2.6.js" type="text/javascript"></script>
+  <script src="jQuery/uitabs3/ui.core.js" type="text/javascript"></script>
+  <script src="jQuery/uitabs3/ui.tabs.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#tabs > ul').tabs();
+    });    
+  </script>
+
+</head>
+<body>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tab1"><span>tab1</span></a></li>
+      <li><a href="#tab2"><span>tab2</span></a></li>
+      <li><a href="#tab3"><span>tab3</span></a></li>
+    </ul>
+    <div id="tab1">
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="tab2">
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="tab3">
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+  </div>
+</body>
+</html>
+                  
+      </textarea>                     
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <div id="pittabody">
+	        <!-- body big banner ads -->
+	        <script type="text/javascript" src="http://ad.pitta.ne.jp/ads/40801038aa9c20e846910ecb2264cec008a15088"></script>
+        </div>
+
+
+      </td>
+    </tr>
+    
+    <tr>
+      <td align="center">
+        <a id="lnkRun" href="javascript:__doPostBack('lnkRun','')" style="display:none;"></a> 
+        <input id="btnAsyncPostBack" type="button" value="編集後クリックして実行!" onclick="setSession();" />
+        <input id="btnClose" type="button" value="閉じる" onclick="window.close();" />
+      </td>
+    </tr>    
+        
+    <tr>
+      <td>
+      
+        <div id="UpdatePanel1">
+	
+          
+            <iframe width="95%" style="width:100%; height:750px; background-color:#ffffff;" name="view" src="LoadDemo.aspx">
+            </iframe>   
+                     
+          
+</div>   
+           
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+   
+     </td>       
+    </tr> 
+  </table>  
+  
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form> 
+</body>
+</html>

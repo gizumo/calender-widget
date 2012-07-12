@@ -1,0 +1,37 @@
+// JavaScript for tabmenu with jquery v1.3
+// Copyright(C) ASH (http://ash.jp/)
+
+$(document).ready(function() {
+
+//*** hover ***//
+$('ul.tabmenu > li').hover(
+function() {	// over
+	imgfile = 'img/tab_sel.gif';
+	$(this).css({
+		color: '#ffffff',
+		background: 'transparent url('+imgfile+') no-repeat 0px 0px'
+	});
+	$('a', this).css({
+		color: '#ffffff',
+		background: 'transparent url('+imgfile+') no-repeat 100% 0px'
+	});
+
+}, function() {	// out
+	cname = jQuery(this).attr('class');
+	if (cname == 'act') {
+		imgfile = 'img/tab_act.gif';
+	} else {
+		imgfile = 'img/tab_inact.gif';
+	}
+	$(this).css({
+		color: '#000000',
+		background: 'transparent url('+imgfile+') no-repeat 0px 0px'
+	});
+	$('a', this).css({
+		color: '#000000',
+		background: 'transparent url('+imgfile+') no-repeat 100% 0px'
+	});
+});
+//*** hover ***//
+
+});
